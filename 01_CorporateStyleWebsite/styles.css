@@ -92,6 +92,7 @@ header{
     text-decoration: none;
     color: #ebebcd;
     border: 1px solid #0F769F;
+    border-radius: 30px;
     padding: 15px 40px;
     align-self: baseline;
     transition: all 0.4s;
@@ -145,6 +146,146 @@ header{
     background: #90ffb1;    
 }
 
+/* ICONS */
+#icons{
+    padding: o 50px;
+    background: #0F769F;
+}
+
+.content-icons{
+    padding: 50px 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.content-icons div{
+    flex: 1;
+    margin-right: 20px o;
+    border-right: 2px solid #ebebcd;
+}
+
+#icon-api{
+    border: none;
+}
+
+.content-icons div i{
+    font-size: 3em;
+    color: #90F3FF;
+}
+
+.content-icons div h6{
+    font-size: 20px;
+    color: #ebebcd;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.content-icons div p{
+    font-size: 15px;
+    color: #ebebcd;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.button-icons{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.button-more-reverse{
+    text-decoration: none;
+    display: inline-block;
+    color: #90ffb1;
+    padding: 10px 30px;
+    border: 3px solid #90ffb1;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.button-more-reverse:hover{
+    background: #90ffb1;
+    color: #0F769F;    
+}
+
+/* FORM */
+#form{
+    background: #6E90B5;
+    padding: 50px 0;
+    color: #ebebcd;
+}
+
+#form h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#form form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.data-form{
+    display: flex;
+}
+
+.data-form div{
+    padding: 10px;
+    flex: 1;
+}
+
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea{
+    background-color: #6E90B5;
+    border-radius: 10px;
+    border: 2px solid #ebebcd;
+    padding: 10px 5px;
+    outline: 0;
+    color: #ebebcd;
+    width: 100%;
+}
+
+form input:focus, form textarea:focus{
+    border-color: #0F769F70;
+    box-shadow: 0 0 0 1px #0F769F70;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: #ebebcd;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.button-form .button-more{
+    display: block;
+    border: 2px solid #ebebcd;
+    color: #ebebcd;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.button-form .button-more:hover{
+    background: #0F769F70;
+}
+
+/* FOOTER */
+footer{
+    background-color: #0F769F;
+    color: #ebebcd;
+    text-align: center;
+    padding: 10px 0;
+}
+
 /* ============================================================================
          RESPONSIVE 
 ===============================================================================*/
@@ -185,6 +326,21 @@ header{
 
     /* PERSONS */
     #persons{
+        flex-direction: column;
+    }
+
+    /* ICONS */
+    .content-icons{
+        flex-direction: column;
+    }
+
+    .content-icons div{
+        margin: 20px 0;
+        border: none;
+    }
+
+    /* FORM */
+    .data-form{
         flex-direction: column;
     }
 
